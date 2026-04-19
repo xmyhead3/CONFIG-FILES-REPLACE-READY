@@ -39,5 +39,7 @@ cp -r fish kitty fastfetch ~/.config
 
 
 ## ✨ Preview
-I am using Mactahoe Gtk Theme and his icons as well if you asked
 ![Desktop Preview](preview_desktop.png)
+
+
+I am using Mactahoe Gtk Theme and his icons as well if you asked
