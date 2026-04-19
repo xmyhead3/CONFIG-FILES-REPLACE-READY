@@ -18,13 +18,14 @@ Follow these steps to transform your terminal into a high-end workspace.
 First, ensure you have the necessary tools installed on your system:
 # Example for Fedora
 sudo dnf install kitty fastfetch fish
-2. Set Fish as Default
+
+### 2. Set Fish as Default
 Switch from the standard Bash to the powerful Fish shell:
 
 chsh -s $(which fish)
 (Note: You may need to log out and back in for this to take effect.)
 
-3. Apply the Configuration
+### 3. Apply the Configuration
 Move my configuration files into your local directory:
 
 Clone this repository.
@@ -38,7 +39,7 @@ cp -r fish kitty fastfetch ~/.config
 
 
 
-🛠️ Custom "Power-User" 
+## 🛠️ Custom "Power-User" 
 ToolkitI’ve built a collection of custom Fish functions that turn your terminal into a high-end workstation. These aren't just aliases; they are full scripts located in the fish/functions/ folder.
 
 
