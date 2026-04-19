@@ -1,4 +1,4 @@
------------ ![Discord](https://img.shields.io/badge/Discord-%40pvssyy-7289da?style=for-the-badge&logo=discord&logoColor=white) -----------
+----------- ![Discord](https://img.shields.io/badge/Discord-%407umz-7289da?style=for-the-badge&logo=discord&logoColor=white) -----------
 
 # 🌌 Minimalist High-End Terminal Setup
 
@@ -69,4 +69,4 @@ I am using Mactahoe Gtk Theme and his icons as well if you asked
 
 GitHub: @xmyhead3
 
-Discord: @pvssyy
+Discord: @7umz
