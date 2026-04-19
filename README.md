@@ -1,4 +1,5 @@
-Markdown
+----------- ![Discord](https://img.shields.io/badge/Discord-%40pvssyy-7289da?style=for-the-badge&logo=discord&logoColor=white) -----------
+
 # 🌌 Minimalist High-End Terminal Setup
 
 > A beautiful, curated terminal experience featuring **Kitty**, **Fastfetch**, and **Fish Shell**. Designed for GNOME-based Linux distributions but compatible with almost any modern Linux environment.
