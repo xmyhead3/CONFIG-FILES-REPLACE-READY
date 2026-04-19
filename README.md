@@ -22,7 +22,8 @@ First, ensure you have the necessary tools installed on your system:
 ### 2. Set Fish as Default
 Switch from the standard Bash to the powerful Fish shell:
 
-chsh -s $(which fish)
+`chsh -s $(which fish)`
+
 (Note: You may need to log out and back in for this to take effect.)
 
 ### 3. Apply the Configuration
