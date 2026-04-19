@@ -16,49 +16,93 @@
 Follow these steps to transform your terminal into a high-end workspace.
 
 ### 1. Install the Essentials
-First, ensure you have the necessary tools installed on your system:
-# Example for Fedora
-`sudo dnf install kitty fastfetch fish`
+To get the full look, including the custom ASCII art and the prompt, you need to install the dependencies:
 
-### 2. Set Fish as Default
+# For Fedora
+`sudo dnf install kitty fastfetch fish figlet cmatrix hollywood`
+
+**Important:** This setup uses **Starship** for the prompt. Install it with:
+`curl -sS https://starship.rs/install.sh | sh`
+
+### 2\. Set Fish as Default
+
 Switch from the standard Bash to the powerful Fish shell:
 
 `chsh -s $(which fish)`
 
-(Note: You may need to log out and back in for this to take effect.)
+*(Note: You may need to log out and back in for this to take effect.)*
 
-### 3. Apply the Configuration
+### 3\. Apply the Configuration
+
 Move my configuration files into your local directory:
 
-Clone this repository.
+1.  Clone this repository.
+2.  Navigate to your `~/.config` folder.
+3.  Replace the `fish`, `kitty`, and `fastfetch` folders with the ones from this repo.
 
-Navigate to your `~/.config` folder.
+<!-- end list -->
 
-Replace (or add) the fish, kitty, and fastfetch folders with the ones from this repo.
 
 # Quick command to move them (if you are in the cloned repo folder)
-`cp -r fish kitty fastfetch ~/.config`
+
+`cp -r fish kitty fastfetch ~/.config/`
+
+-----
+
+## 🛠️ Custom Functions Toolkit
+
+These aren't just aliases; they are full scripts located in the `fish/functions/` folder.
+
+| Command | Action | Why use it? |
+| :--- | :--- | :--- |
+| **`l`** | Smart List | My high-end replacement for `ls` with icons and details. |
+| **`matrix`** | The Matrix | Drops you into the green digital rain effect. |
+| **`hollywood`** | Movie Mode | Splits terminal into "hacker" panes for the aesthetic. |
+| **`clean`** | Deep Clear | Resets the terminal buffer for a truly fresh start. |
+| **`cat`** | Custom Viewer | A customized way to view file contents beautifully. |
+
+-----
 
 
+## 👤 Personalize Your Name
+The terminal greeting shows **"eprahemi"** in rainbow ASCII art. To change this to your own name:
 
-## 🛠️ Custom "Power-User" 
-ToolkitI’ve built a collection of custom Fish functions that turn your terminal into a high-end workstation. These aren't just aliases; they are full scripts located in the fish/functions/ folder.
+1. Open the configuration file:
+   
+   `nano ~/.config/fish/functions/fish_greeting.fish`
+   
+3. Change the word inside the quotes to your name:
+   
+   # Change "eprahemi" to "yourname"
+   function fish_greeting
+       figlet "yourname" | lolcat
+   end
+   ```
+4. Save and restart your terminal!
 
-# To feel like you're in a movie:
-hollywood
-Note: For matrix and hollywood to work, ensure you have the base packages installed:
+---
 
-`sudo dnf install cmatrix hollywood` (Fedora)
+## 📦 Extra Dependencies
+For the greeting and effects to work, make sure you have these installed:
 
+# Fedora
+
+`sudo dnf install figlet lolcat cmatrix hollywood`
+
+-----
+
+## ✨ Desktop Aesthetics
 
 
 ## ✨ Preview
-![Desktop Preview](preview_desktop.png)
+![Desktop Preview](preview_desktopl.png)
 
 
-I am using Mactahoe Gtk Theme and his icons as well if you asked
+  * **GTK Theme:** [MacTahoe](https://github.com/vinceliuice/WhiteSur-gtk-theme)
+  * **Icons:** MacTahoe Icons
+  * **Wallpaper:** Available in my Wallpapers repository.
 
+-----
 
-GitHub: @xmyhead3
-
-Discord: @7umz
+**GitHub:** [@xmyhead3](https://www.google.com/search?q=https://github.com/xmyhead3)  
+**Discord:** `@7umz`
