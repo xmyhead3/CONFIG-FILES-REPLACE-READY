@@ -64,3 +64,8 @@ Note: For matrix and hollywood to work, ensure you have the base packages instal
 
 
 I am using Mactahoe Gtk Theme and his icons as well if you asked
+
+
+GitHub: @xmyhead3
+
+Discord: @pvssyy
