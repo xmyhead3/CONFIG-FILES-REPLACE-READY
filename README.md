@@ -69,7 +69,7 @@ The terminal greeting shows **"eprahemi"** in rainbow ASCII art. To change this 
 
 1. Open the configuration file:
    
-   `nano ~/.config/fish/functions/fish_greeting.fish`
+   `sudo nano ~/.config/fish/functions/fish_greeting.fish`
    
 3. Change the word inside the quotes to your name:
    
