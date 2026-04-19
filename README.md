@@ -47,6 +47,7 @@ ToolkitI’ve built a collection of custom Fish functions that turn your termina
 # To feel like you're in a movie:
 hollywood
 Note: For matrix and hollywood to work, ensure you have the base packages installed:
+
 `sudo dnf install cmatrix hollywood` (Fedora)
 
 
