@@ -95,7 +95,7 @@ For the greeting and effects to work, make sure you have these installed:
 
 
 ## ✨ Preview
-![Desktop Preview](preview_desktopl.png)
+![Desktop Preview](preview_desktop.png)
 
 
   * **GTK Theme:** [MacTahoe](https://github.com/vinceliuice/WhiteSur-gtk-theme)
