@@ -17,7 +17,7 @@ Follow these steps to transform your terminal into a high-end workspace.
 ### 1. Install the Essentials
 First, ensure you have the necessary tools installed on your system:
 # Example for Fedora
-sudo dnf install kitty fastfetch fish
+'sudo dnf install kitty fastfetch fish'
 
 ### 2. Set Fish as Default
 Switch from the standard Bash to the powerful Fish shell:
@@ -43,13 +43,13 @@ cp -r fish kitty fastfetch ~/.config
 ToolkitI’ve built a collection of custom Fish functions that turn your terminal into a high-end workstation. These aren't just aliases; they are full scripts located in the fish/functions/ folder.
 
 
-cat : Custom Viewer,A customized way to view file contents beautifully.
-clean : Deep Clear,Resets the terminal buffer for a truly fresh start.
-fish_greeting : The Welcome,Displays the custom ASCII name and system info.
-hollywood : Movie Mode,"Splits terminal into ""hacker"" panes for the aesthetic."
-l : Smart List,My high-end replacement for ls with icons and details.
-matrix : The Matrix,Drops you into the green digital rain effect.
-p : Quick Jump,A fast shortcut to jump to your important project paths.
+| cat : Custom Viewer,A customized way to view file contents beautifully.
+| clean : Deep Clear,Resets the terminal buffer for a truly fresh start.
+| fish_greeting : The Welcome,Displays the custom ASCII name and system info.
+| hollywood : Movie Mode,"Splits terminal into ""hacker"" panes for the aesthetic."
+| l : Smart List,My high-end replacement for ls with icons and details.
+| matrix : The Matrix,Drops you into the green digital rain effect.
+| p : Quick Jump,A fast shortcut to jump to your important project paths.
 
 # To feel like you're in a movie:
 hollywood
