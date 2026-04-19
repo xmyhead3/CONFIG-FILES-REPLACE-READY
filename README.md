@@ -44,7 +44,7 @@ Replace (or add) the fish, kitty, and fastfetch folders with the ones from this 
 ## 🛠️ Custom "Power-User" 
 ToolkitI’ve built a collection of custom Fish functions that turn your terminal into a high-end workstation. These aren't just aliases; they are full scripts located in the fish/functions/ folder.
 
-
+| :--- | :--- | :--- | :--- |
 | cat : Custom Viewer,A customized way to view file contents beautifully. |
 | clean : Deep Clear,Resets the terminal buffer for a truly fresh start. |
 | fish_greeting : The Welcome,Displays the custom ASCII name and system info. |
