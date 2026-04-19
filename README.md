@@ -77,8 +77,8 @@ The terminal greeting shows **"eprahemi"** in rainbow ASCII art. To change this 
    function fish_greeting
        figlet "yourname" | lolcat
    end
-   ```
-4. Save and restart your terminal!
+   
+5. Save and restart your terminal!
 
 ---
 
