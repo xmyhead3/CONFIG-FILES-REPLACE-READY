@@ -61,7 +61,7 @@ These aren't just aliases; they are full scripts located in the `fish/functions/
 | **`clean`** | Deep Clear | Resets the terminal buffer for a truly fresh start. |
 | **`cat`** | Custom Viewer | A customized way to view file contents beautifully. |
 | **`getdata`** | Data Analysis | All Data For Anaylysis |
-| **`StayAwake`** | No Shutdown or Suspend | Keep laptop awake when lid is closed. |
+| **`stayawake`** | No Shutdown or Suspend | Keep laptop awake when lid is closed. |
 
 
 -----
