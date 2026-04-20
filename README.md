@@ -62,6 +62,7 @@ These aren't just aliases; they are full scripts located in the `fish/functions/
 | **`cat`** | Custom Viewer | A customized way to view file contents beautifully. |
 | **`getdata`** | Data Analysis | All Data For Anaylysis Virtual Environment. |
 | **`stayawake`** | No Shutdown or Suspend | Keep laptop awake when lid is closed. |
+| **`mkgif`** | Video To Gif | Turn Any Video into Gif. |
 
 
 -----
