@@ -51,7 +51,6 @@ Move my configuration files into your local directory:
 
 ## 🛠️ Custom Functions Toolkit
 
-These aren't just aliases; they are full scripts located in the `fish/functions/` folder.
 
 | Command | Action | Why use it? |
 | :--- | :--- | :--- |
@@ -60,9 +59,18 @@ These aren't just aliases; they are full scripts located in the `fish/functions/
 | **`hollywood`** | Movie Mode | Splits terminal into "hacker" panes for the aesthetic. |
 | **`clean`** | Deep Clear | Resets the terminal buffer for a truly fresh start. |
 | **`cat`** | Custom Viewer | A customized way to view file contents beautifully. |
-| **`getdata`** | Data Analysis | All Data For Anaylysis Virtual Environment. |
-| **`stayawake`** | No Shutdown or Suspend | Keep laptop awake when lid is closed. |
+| **`getdata`** | Data Analysis | All Data For Analysis Virtual Environment. |
+| **`stayawake`** | Sentinel Prime | **Inhibits sleep, lid-suspend, and screen-lock.** Includes a 24h progress dashboard. |
+| **`testdrive`** | Speed & Stability | Stress-test system cores and monitor thermal performance in real-time. |
 | **`mkgif`** | Video To Gif | Turn Any Video into Gif. |
+
+---
+
+#### 🌀 `stayawake` (Sentinel Prime: Signature Edition)
+An advanced system inhibitor created to bypass the standard Linux lid-suspend and screen-lock protocols. Features a real-time HUD showing CPU, RAM, Battery, and Audio/Mic status, along with a 24-hour progress bar and dynamic "Session Ranks" from Alpha to Skibidi God.
+
+#### 🏎️ `testdrive`
+A high-performance utility designed to push system hardware to the limit while maintaining a clean, terminal-based visual interface. Perfect for verifying stability after a fresh build or heavy configuration changes.
 
 
 -----
