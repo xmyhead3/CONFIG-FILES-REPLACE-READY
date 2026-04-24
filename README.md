@@ -112,7 +112,7 @@ For the greeting and effects to work, make sure you have these installed:
 
   * **GTK Theme:** [MacTahoe](https://github.com/vinceliuice/WhiteSur-gtk-theme)
   * **Icons:** MacTahoe Icons
-  * **Wallpaper:** Available in my Wallpapers repository.
+  * **Wallpaper:** Available in My Secret Wallpapers Repository +18.
 
 -----
 
