@@ -16,6 +16,7 @@ function stayawake
     echo -e "\n\033[1;32m✅ SYSTEM DE-RUSTED | CREATED BY $author\033[0m"
     sleep 0.2
 
+    # UI HEADER
     echo -e "\033[1;35m"
     echo "  ███████╗███████╗███╗   ██╗████████╗██╗███╗   ██╗███████╗██╗     "
     echo "  ██╔════╝██╔════╝████╗  ██║╚══██╔══╝██║████╗  ██║██╔════╝██║     "
@@ -29,30 +30,43 @@ function stayawake
     echo -e "\033[1;30m╔══════════════════════════════════════════════════════════════════╗\033[0m"
     printf "  \033[1;32mOPERATOR:\033[0m  %-20s \033[1;34mNODE:\033[0m %-20s \n" $current_user $machine_name
     echo -e "  \033[1;32mSTATUS:  \033[0m  LID-SLEEP/LOCK: \033[1;31mDISABLED\033[0m | \033[1;36mMODE:\033[0m MOGGING"
-    echo -e "  \033[1;31mTERMINATE:\033[0m Press \033[1;37m[CTRL+C]\033[0m to restore mid security"
+    echo -e "  \033[1;31mTERMINATE:\033[0m Press \033[1;37m[CTRL+C]\033[0m to restore system sanity"
     echo -e "\033[1;30m╚══════════════════════════════════════════════════════════════════╝\033[0m"
 
+    # DISABLE LOCKING
     if command -v gsettings > /dev/null
         gsettings set org.gnome.desktop.screensaver lock-enabled false
+        gsettings set org.gnome.desktop.session idle-delay 0
     end
 
-    systemd-inhibit --what=handle-lid-switch:idle:sleep --why="Sentinel Prime Active for $current_user" sleep 1d &
+    # START INHIBITOR
+    systemd-inhibit --what=handle-lid-switch:idle:sleep --why="Sentinel Prime Active" sleep 1d &
     set -l pid $last_pid
 
-    function cleanup --on-signal SIGINT --inherit-variable pid --inherit-variable current_user --inherit-variable author
-        echo -e "\n\n\033[1;31m🚨 SESSION ENDED | L + RATIO + BACK TO SLEEP...\033[0m"
+    # IMPROVED CLEANUP ENGINE
+    function cleanup --on-signal SIGINT --inherit-variable pid --inherit-variable current_user
+        echo -e "\n\n\033[1;31m🚨 EMERGENCY RESET: RESTORING SECURITY POLICIES...\033[0m"
+        
+        # Force re-enable lock and standard idle
         if command -v gsettings > /dev/null
             gsettings set org.gnome.desktop.screensaver lock-enabled true
+            gsettings set org.gnome.desktop.session idle-delay 300 # Sets to 5 mins default
         end
-        kill $pid 2>/dev/null
-        echo -e "\033[1;32m🔒 SECURITY RE-ARMED. Goodbye, $current_user.\033[0m"
+        
+        # Kill the inhibitor process
+        if kill -0 $pid 2>/dev/null
+            kill $pid
+        end
+
+        echo -e "\033[1;32m🔒 SECURITY RE-ARMED. Lid-suspend restored. Goodbye.\033[0m"
         functions -e cleanup
+        # Clear the lines so the terminal stays pretty
+        echo -e "\033[J" 
         return 0
     end
 
     set -l seconds 0
     while kill -0 $pid 2>/dev/null
-        # FIXED MATH FOR FISH SHELL
         set -l hours (math -s0 "$seconds / 3600")
         set -l mins (math -s0 "($seconds % 3600) / 60")
         set -l secs (math -s0 "$seconds % 60")
@@ -74,29 +88,25 @@ function stayawake
             set -l app (pactl list sink-inputs | grep "application.name" | head -n 1 | cut -d'"' -f2)
             if test -n "$app"; set audio_app (echo $app | tr '[:lower:]' '[:upper:]'); end
         end
-
+        
         set -l mic_stat "OFF"
         if pactl list sources | grep -A 10 "Source #" | grep -q "Mute: no"; set mic_stat "ON 🔥"; end
-
+        
         set -l brain_rot "Mewing"
         if test $seconds -lt 300; set brain_rot "Alpha Build";
         else if test $seconds -lt 3600; set brain_rot "Sigma Grind";
         else; set brain_rot "Skibidi God"; end
-
-        # Dashboard Top Row
+        
+        # Dashboard UI
         echo -e -n "\r\033[K\033[1;30m[\033[1;32mCPU: $cpu_usage%\033[1;30m] [\033[1;35mRAM: $ram_usage\033[1;30m] [\033[1;33mBATT: $batt\033[1;30m] [\033[1;36mAUDIO: $audio_app\033[1;30m] [\033[1;31mMIC: $mic_stat\033[1;30m]"
         
-        # 24-HOUR PROGRESS BAR (86400s)
         set -l bar_progress (math -s0 "$seconds * 40 / 86400")
         if test $bar_progress -gt 40; set bar_progress 40; end
-        
         set -l bar ""
         for i in (seq 1 40)
             if test $i -le $bar_progress; set bar "$bar█"; else; set bar "$bar░"; end
         end
-
-        # Dashboard Bottom Row
-        # Added \033[1A to keep the cursor on the same two lines without scrolling
+        
         printf "\n\033[K %b 🕒 ACTIVE: %02dh %02dm %02ds \033[1;30m| \033[0m%b%s\033[0m \033[1;30m| \033[1;32m%s\033[0m\033[1A" $t_color $hours $mins $secs $p_color $bar $brain_rot
         
         sleep 1
