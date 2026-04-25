@@ -51,18 +51,18 @@ Move my configuration files into your local directory:
 
 ## 🛠️ Custom Functions Toolkit
 
-
 | Command | Action | Why use it? |
 | :--- | :--- | :--- |
-| **`l`** | Smart List | My high-end replacement for `ls` with icons and details. |
-| **`matrix`** | The Matrix | Drops you into the green digital rain effect. |
-| **`hollywood`** | Movie Mode | Splits terminal into "hacker" panes for the aesthetic. |
-| **`clean`** | Deep Clear | Resets the terminal buffer for a truly fresh start. |
-| **`cat`** | Custom Viewer | A customized way to view file contents beautifully. |
-| **`getdata`** | Data Analysis | All Data For Analysis Virtual Environment. |
-| **`stayawake`** | Sentinel Prime | **Inhibits sleep, lid-suspend, and screen-lock.** Includes a 24h progress dashboard. |
-| **`testdrive`** | Speed & Stability | Stress-test system cores and monitor thermal performance in real-time. |
-| **`mkgif`** | Video To Gif | Turn Any Video into Gif. |
+| **`l`** | Smart Directory Analysis | Premium replacement for `ls` featuring iconography and metadata visualization. |
+| **`matrix`** | Digital Rain Protocol | Initiates the classic green phosphor cascade visual effect. |
+| **`hollywood`** | Cinematic Interface | Orchestrates a multi-pane "Technologist" aesthetic for workspace visualization. |
+| **`clean`** | Buffer Sanitization | Executes a deep terminal reset to eliminate scrollback artifacts. |
+| **`cat`** | Professional Syntax Viewer | High-fidelity file inspection with integrated syntax highlighting and line indexing. |
+| **`getdata`** | Data Analysis Engine | Provisions the virtual environment architecture for advanced data modeling. |
+| **`stayawake`** | Sentinel Prime | **Overrides lid-suspend and security-lock.** Features a high-availability dashboard. |
+| **`cleanreset`** | **Infrastructure Restoration** | **Nukes system overrides and clear cache Fedora factory defaults.** |
+| **`testdrive`** | Core Stress Analytics | Validates system stability through thermal monitoring and high-load core saturation. |
+| **`mkgif`** | Media Conversion | Optimized pipeline for transforming video assets into high-quality GIF formats. |
 
 ---
 
