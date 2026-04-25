@@ -1,4 +1,13 @@
 function getdata --description 'High-End Data Science Suite Installer'
+  # --- EPRAHEMI CUSTOM HEADER ---
+    echo -e "\033[1;36m"
+    echo "  ███████╗██████╗ ██████╗  █████╗ ██╗  ██╗███████╗███╗   ███╗██╗"
+    echo "  ██╔════╝██╔══██╗██╔══██╗██╔══██╗██║  ██║██╔════╝████╗ ████║██║"
+    echo "  █████╗  ██████╔╝██████╔╝███████║███████║█████╗  ██╔████╔██║██║"
+    echo "  ██╔══╝  ██╔═══╝ ██╔══██╗██╔══██║██╔══██║██╔══╝  ██║╚██╔╝██║██║"
+    echo "  ███████╗██║     ██║  ██║██║  ██║██║  ██║███████╗██║ ╚═╝ ██║██║"
+    echo "  ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚═╝"
+    
     # 1. Branding & Intro
     echo (set_color -o cyan)"--------------------------------------------------"
     echo (set_color -o white)"  💎 EPRAHEMI MAIN DATABASE: LOADING..."
@@ -22,6 +31,15 @@ function getdata --description 'High-End Data Science Suite Installer'
     echo (set_color green)"🚀 Injecting Data Science Toolkit..."(set_color normal)
     pip install pandas numpy matplotlib seaborn scikit-learn jupyter openpyxl
 
+  # --- EPRAHEMI CUSTOM HEADER ---
+    echo -e "\033[1;36m"
+    echo "  ███████╗██████╗ ██████╗  █████╗ ██╗  ██╗███████╗███╗   ███╗██╗"
+    echo "  ██╔════╝██╔══██╗██╔══██╗██╔══██╗██║  ██║██╔════╝████╗ ████║██║"
+    echo "  █████╗  ██████╔╝██████╔╝███████║███████║█████╗  ██╔████╔██║██║"
+    echo "  ██╔══╝  ██╔═══╝ ██╔══██╗██╔══██║██╔══██║██╔══╝  ██║╚██╔╝██║██║"
+    echo "  ███████╗██║     ██║  ██║██║  ██║██║  ██║███████╗██║ ╚═╝ ██║██║"
+    echo "  ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚═╝"
+    
     # 5. Cool Outro
     echo ""
     echo (set_color -o blue)"✅ DATABASE SYNCHRONIZATION COMPLETE"
