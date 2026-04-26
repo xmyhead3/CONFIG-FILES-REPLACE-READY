@@ -53,16 +53,17 @@ Move my configuration files into your local directory:
 
 | Command | Action | Why use it? |
 | :--- | :--- | :--- |
-| **`l`** | Smart Directory Analysis | Premium replacement for `ls` featuring iconography and metadata visualization. |
-| **`matrix`** | Digital Rain Protocol | Initiates the classic green phosphor cascade visual effect. |
-| **`hollywood`** | Cinematic Interface | Orchestrates a multi-pane "Technologist" aesthetic for workspace visualization. |
-| **`clean`** | Buffer Sanitization | Executes a deep terminal reset to eliminate scrollback artifacts. |
-| **`cat`** | Professional Syntax Viewer | High-fidelity file inspection with integrated syntax highlighting and line indexing. |
-| **`getdata`** | Data Analysis Engine | Provisions the virtual environment architecture for advanced data modeling. |
-| **`stayawake`** | Sentinel Prime | **Overrides lid-suspend and security-lock.** Features a high-availability dashboard. |
-| **`cleanreset`** | **Infrastructure Restoration** | **Nukes system overrides and clear cache Fedora factory defaults.** |
-| **`testdrive`** | Core Stress Analytics | Validates system stability through thermal monitoring and high-load core saturation. |
-| **`mkgif`** | Media Conversion | Optimized pipeline for transforming video assets into high-quality GIF formats. |
+| **`refresh`** | **Full System Reset** | **Fixes glitched icons, invisible docks, and laggy windows without restarting the PC.** |
+| **`l`** | Smart List | A better way to see files and folders with icons and details. |
+| **`matrix`** | Matrix Effect | Starts the classic green falling code screen. |
+| **`hollywood`** | Hacker Screen | Makes your screen look like a busy hacker workstation from a movie. |
+| **`clean`** | Terminal Wipe | Clears your screen and hides your old typing history. |
+| **`cat`** | Code Reader | Opens files with colors and line numbers so they are easier to read. |
+| **`getdata`** | Setup Work | Prepares your laptop for data science and AI work. |
+| **`stayawake`** | Keep Awake | Prevents your laptop from sleeping or locking when you close the lid. |
+| **`cleanreset`** | Factory Reset | Removes custom settings and clears junk to make the system feel new. |
+| **`testdrive`** | Speed Test | Checks how fast your SSD, RAM, and Internet are. |
+| **`mkgif`** | Video to GIF | A fast way to turn any video into a high-quality GIF. |
 
 ---
 
