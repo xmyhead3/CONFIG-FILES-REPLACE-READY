@@ -64,6 +64,9 @@ Move my configuration files into your local directory:
 | **`cleanreset`** | Factory Reset | Removes custom settings and clears junk to make the system feel new. |
 | **`testdrive`** | Speed Test | Checks how fast your SSD, RAM, and Internet are. |
 | **`mkgif`** | Video to GIF | A fast way to turn any video into a high-quality GIF. |
+| **`c`** | Celluloid | Play any Video using Celluloid inside terminal. |
+| **`v`** | Vlc | Play any Video In Vlc inside terminal. |
+
 
 ---
 
