@@ -66,6 +66,7 @@ Move my configuration files into your local directory:
 | **`mkgif`** | Video to GIF | A fast way to turn any video into a high-quality GIF. |
 | **`c`** | Celluloid | Play any Video using Celluloid inside terminal. |
 | **`v`** | Vlc | Play any Video In Vlc inside terminal. |
+| **`n`** | Notes | Open notes easily in terminal or type n input.txt and it open the file imediatly. |
 
 
 ---
