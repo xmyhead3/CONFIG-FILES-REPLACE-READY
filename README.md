@@ -67,6 +67,7 @@ Move my configuration files into your local directory:
 | **`c`** | Celluloid | Play any Video using Celluloid inside terminal. |
 | **`v`** | Vlc | Play any Video In Vlc inside terminal. |
 | **`n`** | Notes | Open notes easily in terminal or type n input.txt and it open the file imediatly. |
+| **`weather`** | Mousam Weather | high end weather app. |
 
 
 ---
